@@ -1,0 +1,194 @@
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--light-grayish-cyan);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  text-align: center;
+  margin: 75px auto;
+}
+
+#card {
+  width: 60%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  border-radius: 20px;
+  margin: auto;
+}
+#bill_card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-right: 20px;
+}
+input {
+  width: 30%;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  background-position: 17px 15px;
+  background-repeat: no-repeat;
+  background-color: var(--very-light-grayish-cyan);
+  text-align: center;
+  font-size: 18px;
+  color: var(--very-dark-cyan);
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+.card_text {
+  font-size: 20px;
+  color: var(--dark-grayish-cyan);
+}
+.bill_input {
+  width: 95%;
+  padding: 10px;
+  text-align: end;
+  background-image: url("images/icon-dollar.svg");
+  margin-bottom: 15px;
+  color: var(--very-dark-cyan);
+}
+.tip {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.tips {
+  background-color: var(--very-dark-cyan);
+  color: var(--white);
+  width: 30%;
+  height: 48px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.active-tip {
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  font-weight: bolder;
+}
+#result_card {
+  width: 50%;
+  background-color: var(--very-dark-cyan);
+  border-radius: 20px;
+  padding: 30px;
+}
+.people_input {
+  width: 95%;
+  padding: 10px;
+  text-align: end;
+  background-image: url("images/icon-person.svg");
+  margin-bottom: 20px;
+  color: var(--very-dark-cyan);
+}
+.result_text {
+  color: var(--light-grayish-cyan);
+}
+.tip_amount,
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.person {
+  font-size: 12px;
+  color: var(--grayish-cyan);
+  font-weight: 700;
+}
+.amount {
+  font-size: 28px;
+  color: var(--strong-cyan);
+  font-weight: 700;
+}
+.reset {
+  border: none;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--very-dark-cyan);
+  background-color: var(--strong-cyan);
+  padding: 9px 0 9px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 120px;
+}
+
+#tip_custom input {
+  box-sizing: border-box;
+  width: 33%;
+}
+
+.people_label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.error {
+  color: red;
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 30px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  #card {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+  .bill_input {
+    width: 95%;
+    margin-bottom: 30px;
+  }
+  #bill_card {
+    width: 100%;
+  }
+  .tips, 
+  .tip_custom {
+    width: 45%;
+  }
+  #result_card {
+    width: 100%;
+  }
+  .reset {
+    margin-top: 20px;
+  }
+}

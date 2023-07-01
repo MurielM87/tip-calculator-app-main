@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <div class="container">
+    <img src="images/logo.svg" alt="logo" class="logo" />
+    <div id="card">
+      <div id="bill_card">
+        <h2 class="card_text">Bill</h2>
+        <input type="text" class="bill_input">
+        <div class="card_text">Select Tip %</div>
+        <div class="tip">
+          <div class="tips">5%</div>
+          <div class="tips active-tip">10%</div>
+          <div class="tips">15%</div>
+          <div class="tips">25%</div>
+          <div class="tips">50%</div>
+          <input class="tip_custom" type="text" placeholder="Custom" />
+        </div>
+        <div class="people_label">
+          <div class="card_text">Number of People</div>
+          <div class="error">Can't be Zero</div>
+        </div>
+        <input type="text" class="people_input">
+      </div>
+
+
+      <div id="result_card">
+        <div class="tip_amount">
+          <div class="text">
+            <p class="result_text">Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="tip_amount">$4.27</div>
+        </div>
+        <div class="total">
+          <div class="text">
+            <p class="result_text">Total</p>
+            <p class="person">/ person</p>
+          </div>
+          <div class="amount" id="total_amount">$32.79</div>
+        </div>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Muriel MARCHAL</a>.
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
